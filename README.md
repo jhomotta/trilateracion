@@ -1,0 +1,2 @@
+# trilateracion
+proyecto en golang
