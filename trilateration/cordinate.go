@@ -1,6 +1,7 @@
-package main
+package trilateration
 
 import (
+	"log"
 	"os"
 	"strconv"
 
@@ -18,6 +19,8 @@ var _ = godotenv.Load(".env")
 
 func SateliteCordinate(name string, distance float64) Cordinate {
 	var cor Cordinate
+	var err error
+
 	switch name {
 	case "kenobi":
 		cor.x, err = strconv.ParseFloat(os.Getenv("kenobi_x"), 64)
@@ -28,6 +31,11 @@ func SateliteCordinate(name string, distance float64) Cordinate {
 	case "sato":
 		cor.x, err = strconv.ParseFloat(os.Getenv("sato_x"), 64)
 		cor.y, err = strconv.ParseFloat(os.Getenv("sato_y"), 64)
+
+	}
+
+	if err != nil {
+		log.Println(err.Error())
 	}
 
 	cor.d = distance

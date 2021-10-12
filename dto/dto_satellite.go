@@ -1,4 +1,4 @@
-package main
+package dto
 
 type SatelliteDto struct {
 	Satellite []struct {

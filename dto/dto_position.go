@@ -1,4 +1,4 @@
-package main
+package dto
 
 type PositionDto struct {
 	Position struct {

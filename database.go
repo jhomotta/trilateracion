@@ -20,5 +20,5 @@ func InitialMigration() {
 		log.Println("Connect to DB!")
 	}
 
-	DB.AutoMigrate(&Satellite{})
+	//DB.AutoMigrate(&Satellite{})
 }

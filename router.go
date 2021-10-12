@@ -6,6 +6,7 @@ import (
 
 	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
+	"meradolibre.com/q/v2/api"
 )
 
 func initializeRouter() {
@@ -15,7 +16,7 @@ func initializeRouter() {
 	//us := NewUserController()
 
 	//r.HandleFunc("/api/satellite", GetSatellites).Methods("GET")
-	r.HandleFunc("/api/satellite", CreateSatellite).Methods("POST")
+	r.HandleFunc("/api/satellite", api.CreateSatellite).Methods("POST")
 	/*r.HandleFunc("/api/satellite/{id}", GetUser).Methods("GET")
 	r.HandleFunc("/api/satellite/{id}", UpdateUser).Methods("PUT")
 	r.HandleFunc("/api/satellite/{id}", DeleteUser).Methods("DELETE")
