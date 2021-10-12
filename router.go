@@ -14,7 +14,7 @@ func initializeRouter() {
 	// Get Controller instance
 	//us := NewUserController()
 
-	r.HandleFunc("/api/satellite", GetSatellites).Methods("GET")
+	//r.HandleFunc("/api/satellite", GetSatellites).Methods("GET")
 	r.HandleFunc("/api/satellite", CreateSatellite).Methods("POST")
 	/*r.HandleFunc("/api/satellite/{id}", GetUser).Methods("GET")
 	r.HandleFunc("/api/satellite/{id}", UpdateUser).Methods("PUT")

@@ -1,7 +1,9 @@
 package main
 
 type SatelliteDto struct {
-	Name     string   `json:"name"`
-	Distance int32    `json:"distance"`
-	Message  []string `json:"message"`
+	Satellite []struct {
+		Name     string   `json:"name"`
+		Distance float64  `json:"distance"`
+		Message  []string `json:"message"`
+	} `json:"satellite"`
 }
