@@ -31,7 +31,7 @@
  
  o simplemente con > go run .
 ```
-# para consumir el servicio 
+# para consumir el servicio por POST
 http://localhost:9000/api/satellite
 ```json
 {
