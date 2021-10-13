@@ -5,7 +5,7 @@
 
 # DB
 
-- Enter the database information in .env y las cordenadas de los satelites (en este caso no es neceario configurar la db)
+- Ingrese la informacion de la base de datos en .env y las cordenadas de los satelites (en este caso no es neceario configurar la db)
 ```sh
  user="root"
  pass="root"
@@ -22,7 +22,7 @@
 ```
 
 
-# ejecutat la app
+# ejecuta la app
 ```sh
  go mod init meradolibre.com/q/v2
  go mod tidy
