@@ -72,3 +72,4 @@ http://localhost:9000/api/satellite
 }
 ```
 
+# debo mencionar que para realizar el ejercicio me base en este [proyecto](https://github.com/bryanpaluch/trilateration-go/blob/master/main.go)
